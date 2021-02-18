@@ -41,6 +41,7 @@ class Manager < Employee
   def fire_all_employees
     employees.each do |employees|
       employees.active = false
+      puts "#{employees.first_name} employment status: #{employees.active}"
     end
   end
 
