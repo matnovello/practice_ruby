@@ -39,7 +39,9 @@ class Manager < Employee
   end
 
   def fire_all_employees
-    p employees[0].active
+    employees.each do |employees|
+      employees.active = false
+    end
   end
 
   def send_report
